@@ -5,7 +5,7 @@ function MyJobs({ auth }) {
 
     useEffect(() => {
         const credentials = btoa(`${auth.email}:${auth.password}`);
-        fetch("http://localhost:8080/api/jobs", {
+        fetch("https://independent-success-production-4bb8.up.railway.app/api/jobs", {
             headers: {
                 Authorization: `Basic ${credentials}`,
             },

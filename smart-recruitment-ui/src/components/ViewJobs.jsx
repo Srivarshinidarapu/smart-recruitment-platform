@@ -6,7 +6,7 @@ function ViewJobs({ auth }) {
     const credentials = btoa(`${auth.email}:${auth.password}`);
 
     useEffect(() => {
-        fetch("http://localhost:8080/api/jobs", {
+        fetch("https://independent-success-production-4bb8.up.railway.app/api/jobs", {
             headers: {
                 Authorization: `Basic ${credentials}`,
             },
@@ -28,7 +28,7 @@ function ViewJobs({ auth }) {
     const applyToJob = async (jobId) => {
         try {
             const response = await fetch(
-                "http://localhost:8080/api/job-applications",
+                "https://independent-success-production-4bb8.up.railway.app/api/job-applications",
                 {
                     method: "POST",
                     headers: {

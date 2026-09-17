@@ -22,7 +22,7 @@ function PostJob({ auth }) {
 
         const credentials = btoa(`${auth.email}:${auth.password}`);
         try {
-            const response = await fetch("http://localhost:8080/api/jobs", {
+            const response = await fetch("https://independent-success-production-4bb8.up.railway.app/api/jobs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

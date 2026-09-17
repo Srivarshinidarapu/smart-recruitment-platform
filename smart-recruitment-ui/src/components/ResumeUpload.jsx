@@ -19,7 +19,7 @@ function ResumeUpload({ auth }) {
 
         try {
             const response = await fetch(
-                "http://localhost:8080/api/resumes/upload",
+                "https://independent-success-production-4bb8.up.railway.app/api/resumes/upload",
                 {
                     method: "POST",
                     headers: {

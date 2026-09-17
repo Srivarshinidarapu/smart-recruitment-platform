@@ -10,7 +10,7 @@ function MatchResults({ auth }) {
 
             try {
                 const applicationsResponse = await fetch(
-                    "http://localhost:8080/api/job-applications",
+                    "https://independent-success-production-4bb8.up.railway.app/api/job-applications",
                     {
                         headers: {
                             Authorization: `Basic ${credentials}`,
@@ -35,7 +35,7 @@ function MatchResults({ auth }) {
                 const jobId = applications[0].jobId;
 
                 const matchResponse = await fetch(
-                    `http://localhost:8080/api/matching/candidate/${applications[0].candidateId}/job/${jobId}`,
+                    `https://independent-success-production-4bb8.up.railway.app/api/matching/candidate/${applications[0].candidateId}/job/${jobId}`,
                     {
                         headers: {
                             Authorization: `Basic ${credentials}`,

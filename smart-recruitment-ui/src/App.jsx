@@ -17,7 +17,7 @@ function App() {
 
     try {
       const response = await fetch(
-          "http://localhost:8080/api/users/me",
+          "https://independent-success-production-4bb8.up.railway.app/api/users/me",
           {
             headers: {
               Authorization: `Basic ${credentials}`,

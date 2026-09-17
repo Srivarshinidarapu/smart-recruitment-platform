@@ -13,7 +13,7 @@ function Login({ onLogin }) {
 
         try {
             const response = await fetch(
-                "http://localhost:8080/api/candidates",
+                "https://independent-success-production-4bb8.up.railway.app/api/candidates",
                 {
                     headers: {
                         Authorization: `Basic ${credentials}`,
