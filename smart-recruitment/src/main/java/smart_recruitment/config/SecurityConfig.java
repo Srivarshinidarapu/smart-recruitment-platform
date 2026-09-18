@@ -30,7 +30,8 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(
                 List.of(
                         "http://localhost:5173",
-                        "https://smart-recruitment-platform-kohl.vercel.app"
+                        "https://smart-recruitment-platform-kohl.vercel.app",
+                        "https://smart-recruitment-platform-lz8d2m8rk-varshinid.vercel.app"
                 )
         );
 
