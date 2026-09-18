@@ -63,8 +63,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         // User creation / registration
-                        .requestMatchers("/api/users").permitAll()
-
+                        .requestMatchers(HttpMethod.POST, "/api/users").permitAll()
                         // Recruiter-only operations
                         .requestMatchers(HttpMethod.POST, "/api/jobs").hasRole("RECRUITER")
                         .requestMatchers(HttpMethod.PUT, "/api/jobs/**").hasRole("RECRUITER")
